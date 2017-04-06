@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Secured</title>
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bulma/0.4.0/css/bulma.css" />
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bulma/0.4.0/css/bulma.css.map" />
+</head>
+<body>
+<section class="hero is-dark is-fullheight">
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <span class="nav-toggle">
+        </span>
+                <div class="nav-right nav-menu">
+                    <a class="nav-item" th:href="@{/}" >
+                        Home
+                    </a>
+                    <a class="nav-item is-active" th:href="@{/secured}">
+                        Secured
+                    </a>
+                    <form action="/logout" method="post" class="nav-item">
+                        <input class="button is-dark is-inverted is-outlined" type="submit" value="Logout"/>
+                    </form>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title" th:text="'Hello, ' + ${name} + '!'">
+            </h1>
+            <h2 class="subtitle">
+                Secured
+            </h2>
+        </div>
+    </div>
+</section>
+</body>
+</html>

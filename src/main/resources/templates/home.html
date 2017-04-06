@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css"
+          href="/webjars/bulma/0.4.0/css/bulma.css" />
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bulma/0.4.0/css/bulma.css.map" />
+</head>
+<body>
+<section class="hero is-primary is-fullheight">
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <span class="nav-toggle">
+        </span>
+                <div class="nav-right nav-menu">
+                    <a class="nav-item is-active" th:href="@{/}">
+                        Home
+                    </a>
+                    <a class="nav-item" th:href="@{/secured}">
+                        Secured
+                    </a>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Home Page
+            </h1>
+            <h2 class="subtitle">
+                Unsecured
+            </h2>
+            <a class="button is-primary is-inverted" th:href="@{/secured}">
+                <span>Go To The Secured Area</span>
+            </a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
