@@ -1,4 +1,4 @@
-# github-integration
+# github-integration <img src="https://travis-ci.org/sane88/github-integration.svg?branch=master" alt="Build Status" />
 An demo application, secured and integrated with github.
 ## Tech stack
    * Java 8
